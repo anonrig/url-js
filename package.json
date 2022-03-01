@@ -1,0 +1,13 @@
+{
+  "name": "url-js",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bench": "echo \"Error: no benchmark test specified\" && exit 1"
+  },
+  "keywords": ["url", "urlsearchparams"],
+  "author": "Yagiz Nizipli <yagiz@nizipli.com>",
+  "license": "MIT"
+}
