@@ -1,13 +1,19 @@
 {
   "name": "url-js",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "WHATWG URL State Machine implementation",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bench": "echo \"Error: no benchmark test specified\" && exit 1"
+    "benchmark": "node benchmark.js"
   },
-  "keywords": ["url", "urlsearchparams"],
+  "keywords": [
+    "url",
+    "urlsearchparams"
+  ],
   "author": "Yagiz Nizipli <yagiz@nizipli.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "benchmarkify": "^3.0.0"
+  }
 }
