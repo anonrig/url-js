@@ -15,7 +15,8 @@
   "author": "Yagiz Nizipli <yagiz@nizipli.com>",
   "license": "MIT",
   "devDependencies": {
-    "benchmarkify": "^3.0.0"
+    "benchmarkify": "^3.0.0",
+    "whatwg-url": "^11.0.0"
   },
   "repository": {
     "type": "git",
