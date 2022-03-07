@@ -1,5 +1,5 @@
 {
-  "name": "url-js",
+  "name": "url-state-machine",
   "version": "0.1.0",
   "description": "WHATWG URL State Machine implementation",
   "main": "lib/index.js",

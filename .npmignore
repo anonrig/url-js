@@ -1,3 +1,4 @@
 node_modules
 .editorconfig
+benchmark.js
 package-lock.json
