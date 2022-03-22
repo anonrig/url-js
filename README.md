@@ -26,12 +26,12 @@ Here's the current benchmarks comparing `url-state-machine` with the native URL 
 Even though these benchmarks provide a good reference for `url-state-machine`, should not be taken in any consideration since the implementation of `url-state-machine` is not finished, and does not reflect the final performance of it.
 
 ```
-✔ URL                       1,209,360 rps
-✔ url-state-machine         3,167,353 rps
-✔ WHATWG.URL                   59,296 rps
+✔ URL                         854,228 rps
+✔ url-state-machine         1,605,287 rps
+✔ WHATWG.URL                   43,112 rps
 
-   URL                     -61.82%      (1,209,360 rps)   (avg: 826ns)
-   url-state-machine            0%      (3,167,353 rps)   (avg: 315ns)
-   WHATWG.URL              -98.13%         (59,296 rps)   (avg: 16μs)
+   URL                     -46.79%        (854,228 rps)   (avg: 1μs)
+   url-state-machine            0%      (1,605,287 rps)   (avg: 622ns)
+   WHATWG.URL              -97.31%         (43,112 rps)   (avg: 23μs)
 -----------------------------------------------------------------------
 ```
