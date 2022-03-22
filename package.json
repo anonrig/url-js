@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "benchmark": "node benchmark.js"
   },
   "keywords": [
@@ -16,6 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "benchmarkify": "^3.0.0",
+    "c8": "^7.11.0",
+    "vitest": "^0.7.7",
     "whatwg-url": "^11.0.0"
   },
   "repository": {

@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "module": "ESNext",
-    "target": "ES2021"
+    "target": "ES2021",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules"]
 }
