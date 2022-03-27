@@ -1,4 +1,4 @@
-const URLStateMachine = require('./lib')
+const URLStateMachine = require('../lib')
 const WHATWG = require('whatwg-url')
 const Benchmarkify = require('benchmarkify')
 const bench = new Benchmarkify('URL').printHeader()

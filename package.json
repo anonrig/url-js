@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "benchmark": "node benchmark.js"
+    "benchmark": "node test/benchmark.js"
   },
   "keywords": [
     "url",
