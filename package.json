@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "benchmark": "node test/benchmark.js"
+    "benchmark": "node test/benchmark.mjs"
   },
   "keywords": [
     "url",
@@ -16,8 +16,8 @@
   "author": "Yagiz Nizipli <yagiz@nizipli.com>",
   "license": "MIT",
   "devDependencies": {
-    "benchmarkify": "^3.0.0",
     "c8": "^7.11.0",
+    "cronometro": "^1.0.5",
     "vitest": "^0.7.7",
     "whatwg-url": "^11.0.0"
   },
