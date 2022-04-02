@@ -18,7 +18,7 @@
   "devDependencies": {
     "c8": "^7.11.0",
     "cronometro": "^1.0.5",
-    "vitest": "^0.7.7",
+    "vitest": "^0.8.2",
     "whatwg-url": "^11.0.0"
   },
   "repository": {
