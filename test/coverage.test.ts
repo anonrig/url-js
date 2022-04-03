@@ -8,6 +8,8 @@ type Suite = {
   base?: string
   protocol?: string
   failure?: boolean
+  username?: string
+  password?: string
 }
 
 for (let suite of url_test_data) {
@@ -25,6 +27,14 @@ for (let suite of url_test_data) {
         if (t.protocol) {
           assert.equal(state.url.scheme, t.protocol.replaceAll(':', ''))
         }
+
+        if (t.password) {
+          assert.equal(state.url.password, t.password)
+        }
+
+        if (t.username) {
+          assert.equal(state.url.username, t.username)
+        }
       } catch (error) {
         if (t.failure) {
           assert(error.message)
@@ -32,7 +42,6 @@ for (let suite of url_test_data) {
           throw error
         }
       }
-
     })
   }
 }

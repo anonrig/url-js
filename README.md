@@ -37,3 +37,21 @@ Even though these benchmarks provide a good reference for `url-state-machine`, s
 ║ url-state-machine │   10000 │ 774222.60 op/sec │  ± 1.35 % ║
 ╚═══════════════════╧═════════╧══════════════════╧═══════════╝
 ```
+
+### Testing
+
+All tests are referenced and borrowed from [web-platform-tests](https://github.com/web-platform-tests/wpt/blob/master/url/resources/urltestdata.json).
+
+```
+Test Files  1 failed (1)
+     Tests  226 failed | 507 passed (733)
+      Time  1.99s (in thread 34ms, 5907.18%)
+```
+
+#### Conformance to specification
+
+We're currently testing only the following attributes for URL
+
+- username
+- password
+- protocol
