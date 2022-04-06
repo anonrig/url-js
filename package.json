@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "type": "commonjs",
   "scripts": {
+    "format": "rome format . --indent-style space",
     "test": "vitest",
+    "dev": "vitest dev",
     "coverage": "vitest run --coverage",
     "benchmark": "node test/benchmark.mjs"
   },
@@ -18,11 +20,15 @@
   "devDependencies": {
     "c8": "^7.11.0",
     "cronometro": "^1.0.5",
+    "rome": "^0.4.2-next",
     "vitest": "^0.8.2",
     "whatwg-url": "^11.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anonrig/url-js.git"
+  },
+  "dependencies": {
+    "tr46": "^3.0.0"
   }
 }
