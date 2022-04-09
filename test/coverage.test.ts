@@ -14,6 +14,7 @@ type Suite = {
   host?: string,
   hostname?: string,
   fragment?: string,
+  pathname?: string,
 };
 
 for (let suite of url_test_data) {
@@ -60,6 +61,13 @@ for (let suite of url_test_data) {
             t.fragment,
             JSON.stringify(state, null, 2),
           );
+        }
+
+        if (t.pathname) {
+          let path = state.url.path.length === 1 ? "/" + state.url.path : state.url.path.join(
+            "/",
+          );
+          assert.equal(path, t.pathname, JSON.stringify(state.url, null, 2));
         }
       },
     );
