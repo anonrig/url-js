@@ -53,17 +53,17 @@ Test Files  1 failed (1)
 We're currently testing only the following attributes for URL
 
 - pathname
-  - 287 failed | 446 passed (733)
+  - 105 failed | 628 passed (733)
 - host
-  - 119 failed | 614 passed (733)
+  - 72 failed | 661 passed (733)
 - username
   - 28 failed | 705 passed (733)
 - password
   - 20 failed | 713 passed (733)
 - protocol
-  - 13 failed | 720 passed (733)
-- port
   - 1 failed | 732 passed (733)
+- port
+  - 733 passed (733)
 - fragment
   - 733 passed (733)
 - query
