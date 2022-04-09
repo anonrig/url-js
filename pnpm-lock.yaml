@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/node': ^17.0.23
   c8: ^7.11.0
   cronometro: ^1.0.5
   rome: ^0.4.2-next
@@ -12,6 +13,7 @@ dependencies:
   tr46: 3.0.0
 
 devDependencies:
+  '@types/node': 17.0.23
   c8: 7.11.0
   cronometro: 1.0.5
   rome: 0.4.2-next
@@ -93,6 +95,10 @@ packages:
 
   /@types/istanbul-lib-coverage/2.0.4:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
+    dev: true
+
+  /@types/node/17.0.23:
+    resolution: {integrity: sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==}
     dev: true
 
   /acquerello/1.0.7:

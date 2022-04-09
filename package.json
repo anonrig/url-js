@@ -18,6 +18,7 @@
   "author": "Yagiz Nizipli <yagiz@nizipli.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^17.0.23",
     "c8": "^7.11.0",
     "cronometro": "^1.0.5",
     "rome": "^0.4.2-next",
