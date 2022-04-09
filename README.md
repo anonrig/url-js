@@ -61,7 +61,7 @@ We're currently testing only the following attributes for URL
 - host
   - 175 failed | 558 passed (733)
 - pathname
-  - 379 failed | 354 passed (733)
+  - 340 failed | 393 passed (733)
 - port
   - 32 failed | 701 passed (733)
 - fragment
