@@ -28,7 +28,7 @@ for (let suite of url_test_data) {
 
   if (suite.input) {
     test(
-      path.join(t.input, t.base ?? ""),
+      path.join(t.base ?? "", t.input),
       () => {
         const base = t.base ? new StateMachine(t.base).url : null;
         const state = new StateMachine(t.input, base);
