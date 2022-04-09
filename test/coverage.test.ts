@@ -15,7 +15,7 @@ type Suite = {
   hostname?: string,
   fragment?: string,
   pathname?: string,
-  query?: string
+  query?: string,
 };
 
 for (let suite of url_test_data) {
@@ -56,6 +56,13 @@ for (let suite of url_test_data) {
           assert.equal(state.url.host, t.host, JSON.stringify(state, null, 2));
         }
 
+        if (t.pathname) {
+          let path = state.url.path.length === 1 ? "/" + state.url.path : state.url.path.join(
+            "/",
+          );
+          assert.equal(path, t.pathname, JSON.stringify(state.url, null, 2));
+        }
+
         if (t.fragment) {
           assert.equal(
             state.url.fragment,
@@ -64,15 +71,8 @@ for (let suite of url_test_data) {
           );
         }
 
-        if (t.pathname) {
-          let path = state.url.path.length === 1 ? "/" + state.url.path : state.url.path.join(
-            "/",
-          );
-          assert.equal(path, t.pathname, JSON.stringify(state.url, null, 2));
-        }
-
         if (t.query) {
-          assert.equal(state.url.query, t.query)
+          assert.equal(state.url.query, t.query);
         }
       },
     );
