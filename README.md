@@ -44,8 +44,8 @@ All tests are referenced and borrowed from [web-platform-tests](https://github.c
 
 ```
 Test Files  1 failed (1)
-     Tests  383 failed | 350 passed (733)
-      Time  91ms
+     Tests  220 failed | 513 passed (733)
+      Time  543ms (in thread 55ms, 987.09%)
 ```
 
 #### Conformance to specification

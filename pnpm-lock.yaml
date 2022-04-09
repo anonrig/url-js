@@ -6,7 +6,7 @@ specifiers:
   cronometro: ^1.0.5
   rome: ^0.4.2-next
   tr46: ^3.0.0
-  vitest: ^0.8.2
+  vitest: ^0.9.2
   whatwg-url: ^11.0.0
 
 dependencies:
@@ -17,7 +17,7 @@ devDependencies:
   c8: 7.11.0
   cronometro: 1.0.5
   rome: 0.4.2-next
-  vitest: 0.8.4_c8@7.11.0
+  vitest: 0.9.2_c8@7.11.0
   whatwg-url: 11.0.0
 
 packages:
@@ -841,8 +841,8 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /tinyspy/0.3.1:
-    resolution: {integrity: sha512-XXD1NYn5HciffxgxlHmOzq45tTNKRtPHss5go1ZAQmX9LLBIszXLG+NEpnD0shS2F2OMcQ9VSk7IswEeViCrbw==}
+  /tinyspy/0.3.2:
+    resolution: {integrity: sha512-2+40EP4D3sFYy42UkgkFFB+kiX2Tg3URG/lVvAZFfLxgGpnWl5qQJuBw1gaLttq8UOS+2p3C0WrhJnQigLTT2Q==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -896,8 +896,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.8.4_c8@7.11.0:
-    resolution: {integrity: sha512-1OoAG1+VYkzp4WLCVQFRJX/OKk70rsMIM5H23crfc1wSEnJvHlxgQBS1HPpV/VYmjC8bIInKWhnB4Gaw32MnyQ==}
+  /vitest/0.9.2_c8@7.11.0:
+    resolution: {integrity: sha512-XgR42njw350OxBfKD4MK0cNIzgQrhSUKJq9sgbgRR+bD8GonPCyjpFFmPejptaiEyjmQ2FXpEvFHN37b9X2HJA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -921,7 +921,7 @@ packages:
       chai: 4.3.6
       local-pkg: 0.4.1
       tinypool: 0.1.2
-      tinyspy: 0.3.1
+      tinyspy: 0.3.2
       vite: 2.9.1
     transitivePeerDependencies:
       - less
