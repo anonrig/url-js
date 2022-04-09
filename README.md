@@ -45,7 +45,7 @@ All tests are referenced and borrowed from [web-platform-tests](https://github.c
 ```
 Test Files  1 failed (1)
      Tests  469 failed | 264 passed (733)
-      Time  92ms
+      Time  670ms (in thread 64ms, 1050.84%)
 ```
 
 #### Conformance to specification
@@ -62,6 +62,8 @@ We're currently testing only the following attributes for URL
   - 175 failed | 558 passed (733)
 - pathname
   - 379 failed | 354 passed (733)
+- port
+  - 32 failed | 701 passed (733)
 - fragment
   - 733 passed (733)
 - query
