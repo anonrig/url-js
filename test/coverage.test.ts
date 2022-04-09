@@ -27,11 +27,11 @@ for (let suite of url_test_data) {
   const t = suite as Suite;
 
   if (suite.input) {
-    const url = path.join(t.input, t.base ?? "");
     test(
-      url,
+      path.join(t.input, t.base ?? ""),
       () => {
-        const state = new StateMachine(url);
+        const base = t.base ? new StateMachine(t.base).url : null;
+        const state = new StateMachine(t.input, base);
 
         if (typeof t.failure !== "undefined") {
           assert.equal(state.failure, t.failure);
@@ -58,8 +58,12 @@ for (let suite of url_test_data) {
         }
 
         if (t.pathname) {
-          let path = state.url.path.join('/')
-          assert.equal(path === '' ? '/' : path, t.pathname, JSON.stringify(state, null, 2));
+          let path = state.url.path.join("/");
+          assert.equal(
+            path.startsWith("/") ? path : `/${path}`,
+            t.pathname,
+            JSON.stringify({ state, t }, null, 2),
+          );
         }
 
         if (t.host) {
