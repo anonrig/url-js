@@ -53,16 +53,16 @@ Test Files  1 failed (1)
 We're currently testing only the following attributes for URL
 
 - username
-  - 44 failed | 689 passed (733)
+  - 28 failed | 705 passed (733)
 - password
-  - 36 failed | 697 passed (733)
+  - 20 failed | 713 passed (733)
 - protocol
-  - 159 failed | 574 passed (733)
-- fragment
-  - 16 failed | 717 passed (733)
+  - 143 failed | 590 passed (733)
 - host
-  - 191 failed | 542 passed (733)
+  - 175 failed | 558 passed (733)
 - pathname
-  - 391 failed | 342 passed (733)
+  - 379 failed | 354 passed (733)
+- fragment
+  - 733 passed (733)
 - query
   - 733 passed (733)
