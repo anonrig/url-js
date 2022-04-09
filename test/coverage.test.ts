@@ -15,6 +15,7 @@ type Suite = {
   hostname?: string,
   fragment?: string,
   pathname?: string,
+  query?: string
 };
 
 for (let suite of url_test_data) {
@@ -68,6 +69,10 @@ for (let suite of url_test_data) {
             "/",
           );
           assert.equal(path, t.pathname, JSON.stringify(state.url, null, 2));
+        }
+
+        if (t.query) {
+          assert.equal(state.url.query, t.query)
         }
       },
     );
