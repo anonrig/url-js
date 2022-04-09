@@ -49,14 +49,6 @@ for (let suite of url_test_data) {
           assert.equal(state.url.password, t.password);
         }
 
-        if (t.username) {
-          assert.equal(
-            state.url.username,
-            t.username,
-            JSON.stringify(state, null, 2),
-          );
-        }
-
         if (t.pathname) {
           let path = state.url.path.join("/");
           assert.equal(
@@ -71,6 +63,14 @@ for (let suite of url_test_data) {
             state.url.host,
             t.host,
             JSON.stringify({ state, t }, null, 2),
+          );
+        }
+
+        if (t.username) {
+          assert.equal(
+            state.url.username,
+            t.username,
+            JSON.stringify(state, null, 2),
           );
         }
 
