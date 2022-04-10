@@ -5,3 +5,4 @@ package-lock.json
 coverage
 test
 jsconfig.json
+.idea
