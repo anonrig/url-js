@@ -5,13 +5,13 @@ import benchmark from "cronometro";
 await benchmark(
   {
     "URL"() {
-      return new URL("https://www.google.com/path/to/something");
+      return new URL("/path/to/something?hello=world", "https://www.google.com");
     },
     "url-state-machine"() {
-      return new URLStateMachine("https://www.google.com/path/to/something");
+      return new URLStateMachine("/path/to/something?hello=world", "https://www.google.com");
     },
     "whatwg-url"() {
-      return new WHATWG.URL("https://www.google.com/path/to/something");
+      return new WHATWG.URL("/path/to/something?hello=world", "https://www.google.com");
     },
   },
   { warmup: true },
