@@ -1,6 +1,6 @@
 {
   "name": "url-state-machine",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "WHATWG URL State Machine implementation",
   "main": "lib/index.js",
   "type": "commonjs",
