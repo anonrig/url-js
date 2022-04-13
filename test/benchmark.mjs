@@ -8,10 +8,16 @@ await benchmark(
       return new URL("/path/to/something?hello=world", "https://www.google.com");
     },
     "url-state-machine"() {
-      return new URLStateMachine("/path/to/something?hello=world", new URLStateMachine("https://www.google.com").url);
+      return new URLStateMachine(
+        "/path/to/something?hello=world",
+        new URLStateMachine("https://www.google.com").url,
+      );
     },
     "whatwg-url"() {
-      return new WHATWG.URL("/path/to/something?hello=world", "https://www.google.com");
+      return new WHATWG.URL(
+        "/path/to/something?hello=world",
+        "https://www.google.com",
+      );
     },
   },
   { warmup: true },
