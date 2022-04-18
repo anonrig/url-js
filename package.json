@@ -7,6 +7,7 @@
   "scripts": {
     "format": "rome format . --indent-style space",
     "test": "vitest",
+    "watch": "vitest --watch",
     "coverage": "vitest run --coverage",
     "benchmark": "node test/benchmark.mjs"
   },

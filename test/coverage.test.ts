@@ -50,12 +50,8 @@ for (let suite of url_test_data) {
         }
 
         if (t.pathname) {
-          let path = state.url.path.join("/");
-          assert.equal(
-            path.startsWith("/") ? path : `/${path}`,
-            t.pathname,
-            JSON.stringify({ state, t }, null, 2),
-          );
+          let path = state.url.path.map((p) => `/${p}`).join("");
+          assert.equal(path, t.pathname, JSON.stringify({ state, t }, null, 2));
         }
 
         if (t.host) {
