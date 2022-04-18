@@ -3,6 +3,7 @@ import { test, assert } from "vitest";
 import path from "node:path";
 import url_test_data from "./urltestdata.json";
 import StateMachine from "../lib";
+import net from 'node:net'
 
 type Suite = {
   input: string,
@@ -55,8 +56,10 @@ for (let suite of url_test_data) {
         }
 
         if (t.host) {
+          let port = state.url.port ? `:${state.url.port}` : ''
+          let is_ip = net.isIP(state.url.host)
           assert.equal(
-            state.url.host,
+            is_ip ? `[${state.url.host}]${port}` : state.url.host + port,
             t.host,
             JSON.stringify({ state, t }, null, 2),
           );
