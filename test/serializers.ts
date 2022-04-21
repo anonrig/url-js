@@ -58,3 +58,18 @@ export function serialize_ipv6(address) {
 
   return output;
 }
+
+export function serialize_ipv4(address) {
+  let output = "";
+  let n = address;
+
+  for (let i = 1; i <= 4; ++i) {
+    output = String(n % 256) + output;
+    if (i !== 4) {
+      output = `.${output}`;
+    }
+    n = Math.floor(n / 256);
+  }
+
+  return output;
+}

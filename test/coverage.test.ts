@@ -4,7 +4,7 @@ import path from "node:path";
 import url_test_data from "./urltestdata.json";
 import StateMachine from "../lib";
 import net from "node:net";
-import { serialize_ipv6 } from "./serializers";
+import { serialize_ipv4, serialize_ipv6 } from "./serializers";
 
 type Suite = {
   input: string,
@@ -58,11 +58,13 @@ for (let suite of url_test_data) {
 
         if (t.host) {
           let port = state.url.port ? `:${state.url.port}` : "";
-          let host = Array.isArray(state.url.host) ? serialize_ipv6(
-            state.url.host,
-          ) : state.url.host;
+          let host = Array.isArray(state.url.host)
+            ? `[${serialize_ipv6(state.url.host)}]`
+            : typeof state.url.host === "number"
+              ? serialize_ipv4(state.url.host)
+              : state.url.host;
           assert.equal(
-            Array.isArray(state.url.host) ? `[${host}]${port}` : host + port,
+            host + port,
             t.host,
             JSON.stringify({ state, t }, null, 2),
           );
