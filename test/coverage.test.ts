@@ -35,10 +35,6 @@ for (let suite of url_test_data) {
         const base = t.base ? new StateMachine(t.base).url : null;
         const state = new StateMachine(t.input, base);
 
-        if (typeof t.failure !== "undefined") {
-          assert.equal(state.failure, t.failure);
-        }
-
         if (t.pathname) {
           let path = typeof state.url.path === "string" ? state.url.path : state.url.path.map(
             (p) => `/${p}`,
@@ -62,6 +58,10 @@ for (let suite of url_test_data) {
 
         if (t.password) {
           assert.equal(state.url.password, t.password);
+        }
+
+        if (typeof t.failure !== "undefined") {
+          assert.equal(state.failure, t.failure);
         }
 
         if (t.username) {
