@@ -1,3 +1,7 @@
+/* jshint esversion: 8 */
+/* jshint node: true */
+
+"use strict";
 import URLStateMachine from "../lib/index.js";
 import WHATWG from "whatwg-url";
 import benchmark from "cronometro";
