@@ -19,10 +19,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^17.0.25",
-    "c8": "^7.11.0",
+    "c8": "^7.11.2",
     "cronometro": "^1.0.5",
     "rome": "^0.4.2-next",
-    "vitest": "^0.9.3",
+    "vitest": "^0.9.4",
     "whatwg-url": "^11.0.0"
   },
   "repository": {
