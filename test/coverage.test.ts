@@ -30,7 +30,7 @@ for (let suite of url_test_data) {
 
   if (suite.input) {
     test(
-      path.join(t.base ?? "", t.input),
+      `"${t.input}" with base: "${t.base}"`,
       () => {
         const base = t.base ? new StateMachine(t.base).url : null;
         const state = new StateMachine(t.input, base);
@@ -40,7 +40,9 @@ for (let suite of url_test_data) {
         }
 
         if (t.pathname) {
-          let path = typeof state.url.path === 'string' ? state.url.path : state.url.path.map((p) => `/${p}`).join("");
+          let path = typeof state.url.path === "string" ? state.url.path : state.url.path.map(
+            (p) => `/${p}`,
+          ).join("");
           assert.equal(path, t.pathname, JSON.stringify({ state, t }, null, 2));
         }
 
