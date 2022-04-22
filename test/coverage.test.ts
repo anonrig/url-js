@@ -40,7 +40,7 @@ for (let suite of url_test_data) {
         }
 
         if (t.pathname) {
-          let path = state.url.path.map((p) => `/${p}`).join("");
+          let path = typeof state.url.path === 'string' ? state.url.path : state.url.path.map((p) => `/${p}`).join("");
           assert.equal(path, t.pathname, JSON.stringify({ state, t }, null, 2));
         }
 
