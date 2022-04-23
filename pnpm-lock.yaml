@@ -5,12 +5,8 @@ specifiers:
   c8: ^7.11.2
   cronometro: ^1.0.5
   rome: ^0.4.2-next
-  tr46: ^3.0.0
   vitest: ^0.9.4
   whatwg-url: ^11.0.0
-
-dependencies:
-  tr46: 3.0.0
 
 devDependencies:
   '@types/node': 17.0.25
@@ -711,6 +707,7 @@ packages:
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
+    dev: true
 
   /require-directory/2.1.1:
     resolution: {integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I=}
@@ -862,6 +859,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       punycode: 2.1.1
+    dev: true
 
   /type-detect/4.0.8:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}

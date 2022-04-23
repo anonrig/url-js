@@ -28,8 +28,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anonrig/url-js.git"
-  },
-  "dependencies": {
-    "tr46": "^3.0.0"
   }
 }

@@ -29,12 +29,12 @@ Even though these benchmarks provide a good reference for `url-state-machine`, s
 ╔═══════════════════╤═════════╤══════════════════╤═══════════╗
 ║ Slower tests      │ Samples │           Result │ Tolerance ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
-║ whatwg-url        │    1000 │  38150.19 op/sec │  ± 0.87 % ║
-║ url-state-machine │    2000 │  87889.36 op/sec │  ± 0.86 % ║
+║ whatwg-url        │    1000 │  39144.03 op/sec │  ± 0.83 % ║
+║ url-state-machine │    3500 │ 168326.06 op/sec │  ± 0.97 % ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
 ║ Fastest test      │ Samples │           Result │ Tolerance ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
-║ URL               │    1000 │ 472814.36 op/sec │  ± 0.88 % ║
+║ URL               │    1500 │ 473508.17 op/sec │  ± 0.72 % ║
 ╚═══════════════════╧═════════╧══════════════════╧═══════════╝
 ```
 
@@ -44,8 +44,8 @@ All tests are referenced and borrowed from [web-platform-tests](https://github.c
 
 ```
 Test Files  1 failed (1)
-     Tests  40 failed | 693 passed (733)
-      Time  523ms (in thread 46ms, 1137.19%)
+     Tests  32 failed | 701 passed (733)
+      Time  52ms
 ```
 
 #### Conformance to specification
@@ -53,9 +53,9 @@ Test Files  1 failed (1)
 We're currently testing only the following attributes for URL
 
 - pathname
-  - 36 failed | 697 passed (733)
+  - 28 failed | 705 passed (733)
 - host
-  - 13 failed | 720 passed (733)
+  - 5 failed | 728 passed (733)
 - password
   - 1 failed | 732 passed (733)
 - protocol

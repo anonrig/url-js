@@ -1,9 +1,7 @@
 // load tests from https://github.com/web-platform-tests/wpt/blob/master/url/resources/urltestdata.json
 import { test, assert } from "vitest";
-import path from "node:path";
 import url_test_data from "./urltestdata.json";
 import StateMachine from "../lib";
-import net from "node:net";
 import { serialize_ipv4, serialize_ipv6 } from "./serializers";
 
 type Suite = {
