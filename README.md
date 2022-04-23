@@ -23,18 +23,16 @@ console.log(state.url)
 
 Here's the current benchmarks comparing `url-state-machine` with the native URL implementation and `whatwg-url`. 
 
-Even though these benchmarks provide a good reference for `url-state-machine`, should not be taken in any consideration since the implementation of `url-state-machine` is not finished, and does not reflect the final performance of it.
-
 ```
 ╔═══════════════════╤═════════╤══════════════════╤═══════════╗
 ║ Slower tests      │ Samples │           Result │ Tolerance ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
-║ whatwg-url        │    1000 │  39469.01 op/sec │  ± 0.78 % ║
-║ url-state-machine │    3500 │ 182379.62 op/sec │  ± 0.99 % ║
+║ whatwg-url        │    1000 │  39131.98 op/sec │  ± 0.88 % ║
+║ url-state-machine │    6000 │ 201701.03 op/sec │  ± 0.97 % ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
 ║ Fastest test      │ Samples │           Result │ Tolerance ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
-║ URL               │    1500 │ 478767.92 op/sec │  ± 0.83 % ║
+║ URL               │    2500 │ 468611.38 op/sec │  ± 0.93 % ║
 ╚═══════════════════╧═════════╧══════════════════╧═══════════╝
 ```
 
