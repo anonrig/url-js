@@ -21,20 +21,63 @@ console.log(state.url)
 
 ### Benchmarks
 
-Here's the current benchmarks comparing `url-state-machine` with the native URL implementation and `whatwg-url`. 
+<details>
+  <summary>Full domain with input and base</summary>
+
+- `new URL("/path/to/something?hello=world", "https://www.google.com")`
 
 ```
 ╔═══════════════════╤═════════╤══════════════════╤═══════════╗
 ║ Slower tests      │ Samples │           Result │ Tolerance ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
-║ whatwg-url        │    1000 │  40449.66 op/sec │  ± 0.76 % ║
-║ url-state-machine │    6000 │ 211430.21 op/sec │  ± 0.95 % ║
+║ whatwg-url        │    1500 │  30541.64 op/sec │  ± 0.85 % ║
+║ url-state-machine │   10000 │ 221372.06 op/sec │  ± 1.07 % ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
 ║ Fastest test      │ Samples │           Result │ Tolerance ║
 ╟───────────────────┼─────────┼──────────────────┼───────────╢
-║ URL               │    1500 │ 504052.24 op/sec │  ± 0.84 % ║
+║ URL               │   10000 │ 465011.99 op/sec │  ± 1.64 % ║
 ╚═══════════════════╧═════════╧══════════════════╧═══════════╝
 ```
+</details>
+
+<details>
+  <summary>ipv4 address</summary>
+
+- `new URL("http://127.0.0.1")`
+
+```
+╔═══════════════════╤═════════╤═══════════════════╤═══════════╗
+║ Slower tests      │ Samples │            Result │ Tolerance ║
+╟───────────────────┼─────────┼───────────────────┼───────────╢
+║ whatwg-url        │    3000 │   97649.84 op/sec │  ± 0.92 % ║
+║ url-state-machine │   10000 │  552853.27 op/sec │  ± 1.72 % ║
+╟───────────────────┼─────────┼───────────────────┼───────────╢
+║ Fastest test      │ Samples │            Result │ Tolerance ║
+╟───────────────────┼─────────┼───────────────────┼───────────╢
+║ URL               │   10000 │ 1116647.32 op/sec │  ± 2.25 % ║
+╚═══════════════════╧═════════╧═══════════════════╧═══════════╝
+```
+
+</details>
+
+<details>
+  <summary>ipv6 address</summary>
+
+- `new URL("http://[1:0::]")`
+
+```
+╔═══════════════════╤═════════╤═══════════════════╤═══════════╗
+║ Slower tests      │ Samples │            Result │ Tolerance ║
+╟───────────────────┼─────────┼───────────────────┼───────────╢
+║ whatwg-url        │    8500 │  199717.03 op/sec │  ± 0.98 % ║
+║ url-state-machine │    4000 │ 1409688.65 op/sec │  ± 0.96 % ║
+╟───────────────────┼─────────┼───────────────────┼───────────╢
+║ Fastest test      │ Samples │            Result │ Tolerance ║
+╟───────────────────┼─────────┼───────────────────┼───────────╢
+║ URL               │   10000 │ 1472345.31 op/sec │  ± 1.52 % ║
+╚═══════════════════╧═════════╧═══════════════════╧═══════════╝
+```
+</details>
 
 ### Testing
 
