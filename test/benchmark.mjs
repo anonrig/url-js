@@ -24,5 +24,5 @@ await benchmark(
       );
     },
   },
-  { warmup: true, print: { compare: true, compareMode: 'previous' } },
+  { warmup: true, print: { compare: true, compareMode: "previous" } },
 );
