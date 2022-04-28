@@ -55,7 +55,11 @@ for (let suite of url_test_data) {
         }
 
         if (t.password) {
-          assert.equal(state.url.password, t.password);
+          assert.equal(
+            state.url.password,
+            t.password,
+            JSON.stringify({ state, t }, null, 2),
+          );
         }
 
         if (typeof t.failure !== "undefined") {
