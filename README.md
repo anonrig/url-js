@@ -122,6 +122,8 @@ All files     |   95.88 |    95.18 |      98 |   95.88 |
 
 - pathname
   - 1 failed | 732 passed (733)
+- search
+  - 1 failed | 732 passed (733)
 - host
   - 733 passed (733)
 - password
@@ -133,6 +135,4 @@ All files     |   95.88 |    95.18 |      98 |   95.88 |
 - port
   - 733 passed (733)
 - fragment
-  - 733 passed (733)
-- query
   - 733 passed (733)

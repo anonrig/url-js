@@ -15,7 +15,7 @@ type Suite = {
   hostname?: string;
   fragment?: string;
   pathname?: string;
-  query?: string;
+  search?: string;
   port?: number;
 };
 
@@ -38,6 +38,10 @@ for (let suite of url_test_data) {
             (p) => `/${p}`,
           ).join("");
           assert.equal(path, t.pathname, JSON.stringify({ state, t }, null, 2));
+        }
+
+        if (t.search) {
+          assert.equal("?" + state.url.query, t.search);
         }
 
         if (t.host) {
@@ -92,10 +96,6 @@ for (let suite of url_test_data) {
             t.fragment,
             JSON.stringify(state, null, 2),
           );
-        }
-
-        if (t.query) {
-          assert.equal(state.url.query, t.query);
         }
       },
     );
