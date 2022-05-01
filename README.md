@@ -103,8 +103,8 @@ npm test
 
 ```
 Test Files  1 failed (1)
-     Tests  10 failed | 723 passed (733)
-      Time  737ms (in thread 70ms, 1052.63%)
+     Tests  1 failed | 732 passed (733)
+      Time  633ms (in thread 64ms, 989.58%)
 ```
 
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
@@ -121,7 +121,7 @@ All files     |   95.88 |    95.18 |      98 |   95.88 |
 #### Conformance to specification
 
 - pathname
-  - 10 failed | 723 passed (733)
+  - 1 failed | 732 passed (733)
 - host
   - 733 passed (733)
 - password
