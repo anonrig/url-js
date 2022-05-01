@@ -1,18 +1,18 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/node': ^17.0.29
+  '@types/node': ^17.0.30
   c8: ^7.11.2
   cronometro: ^1.0.5
-  rome: ^0.4.2-next
+  rome: ^0.5.0-next
   vitest: ^0.10.0
   whatwg-url: ^11.0.0
 
 devDependencies:
-  '@types/node': 17.0.29
+  '@types/node': 17.0.30
   c8: 7.11.2
   cronometro: 1.0.5
-  rome: 0.4.2-next
+  rome: 0.5.0-next
   vitest: 0.10.0_c8@7.11.2
   whatwg-url: 11.0.0
 
@@ -47,48 +47,48 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
 
-  /@rometools/cli-darwin-arm64/0.4.2-next:
-    resolution: {integrity: sha512-wLtyen1nOlkggQdzkTbAaPX9yGeY3rq2tTV9ClKJo7V77RmHZ4bj4OKGOPckO3/Bz+R0Va06pi8f5szifG/UtQ==}
+  /@rometools/cli-darwin-arm64/0.5.0-next:
+    resolution: {integrity: sha512-dzwIOxvSNPD70DJYzyrxs0DLqUd4p+wDJM/AmHKGTxYJSdQahEG5/scnqfwIGiaSpKP/qNIv4+7Hd0aSaQF0NQ==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rometools/cli-darwin-x64/0.4.2-next:
-    resolution: {integrity: sha512-KsYQPdWeu2+4O1Jy0schlGUep10G/DyAj1jv7a87wM0XKixBdCxAjVIsknNdsPUfMbrWgB7xvwimxcWYEKx7/A==}
+  /@rometools/cli-darwin-x64/0.5.0-next:
+    resolution: {integrity: sha512-DXb/5PxNvD4ENb0oKiWnV2Zfww+yyZ5Q/ADUQqF1TsQjy8l7+4uiY618Wxo7KfH4y2uJA8b7wnly16bSw44F5g==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rometools/cli-linux-arm64/0.4.2-next:
-    resolution: {integrity: sha512-UNXlDg09wFZoB2+/7EueqQ8H1gxSen4qDh2ObkmNQFKNNWcnUMNk0THFoa5yZCMNwTeJDL16bfeQcNrHvXscvg==}
+  /@rometools/cli-linux-arm64/0.5.0-next:
+    resolution: {integrity: sha512-1vWKrnQgBgTBeQZquphsmqdCudX4GuwugaQbQVmpCQa+WfKpAe8SAQIJz5G5G3m9uYQRUfwS2AXXEWuMCVHSZQ==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rometools/cli-linux-x64/0.4.2-next:
-    resolution: {integrity: sha512-NVeOLQGLR+O5UquBWvHBJejmukiIBvHVJbJSuCMWON1xIY0ZbQQVpDCDtVSVtLY4gGFdgogUZM6AJbcAjW66sA==}
+  /@rometools/cli-linux-x64/0.5.0-next:
+    resolution: {integrity: sha512-rKLhodWhYdMmVtIN1mZFxEFTbTiceat6NJUBGbsLHrjQVZ9h9tw8LlK/Lx8dBpzH5j093xKModnxZDFeIYyHLQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rometools/cli-win32-arm64/0.4.2-next:
-    resolution: {integrity: sha512-zkoVGV3NEmWaDaGBmOe+w5WhrM0HLd8of1smw7Dz0XknSa6mK3jR/S/vdS3ZreKcXWEya8FIeCvZ1tXCFQr+Pg==}
+  /@rometools/cli-win32-arm64/0.5.0-next:
+    resolution: {integrity: sha512-XDVcPeTAvR9KgCqJQYLkhG2cb5XhsY1ZQUKSGsruxB257spkizb2M299VvLaSKVD7pDakG8Vk0JN3lPXdn0zdQ==}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@rometools/cli-win32-x64/0.4.2-next:
-    resolution: {integrity: sha512-+3apd6W5tuLfbwZE5lzgv77obmUYA2tjCuQcZ4pwer1BoDHKx3vxwzxRjO9XH8CWXDvLyQN3dJGMGEWZBBaUJQ==}
+  /@rometools/cli-win32-x64/0.5.0-next:
+    resolution: {integrity: sha512-kZeH17xLyQeAD+Y3vAPFuFnF7RxaCmtN/WSfB4mobje5HsAIqP6YPA7Gxpex/fJhv3rRWyNMTvrZEtDn5ogjHw==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
@@ -109,8 +109,8 @@ packages:
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
     dev: true
 
-  /@types/node/17.0.29:
-    resolution: {integrity: sha512-tx5jMmMFwx7wBwq/V7OohKDVb/JwJU5qCVkeLMh1//xycAJ/ESuw9aJ9SEtlCZDYi2pBfe4JkisSoAtbOsBNAA==}
+  /@types/node/17.0.30:
+    resolution: {integrity: sha512-oNBIZjIqyHYP8VCNAV9uEytXVeXG2oR0w9lgAXro20eugRQfY002qr3CUl6BAe+Yf/z3CRjPdz27Pu6WWtuSRw==}
     dev: true
 
   /acquerello/1.0.7:
@@ -695,8 +695,8 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /postcss/8.4.12:
-    resolution: {integrity: sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==}
+  /postcss/8.4.13:
+    resolution: {integrity: sha512-jtL6eTBrza5MPzy8oJLFuUscHDXTV5KcLlqAWHl5q5WYRfnNRGSmOZmOZ1T6Gy7A99mOZfqungmZMpMmCVJ8ZA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.3
@@ -735,26 +735,26 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup/2.70.2:
-    resolution: {integrity: sha512-EitogNZnfku65I1DD5Mxe8JYRUCy0hkK5X84IlDtUs+O6JRMpRciXTzyCUuX11b5L5pvjH+OmFXiQ3XjabcXgg==}
+  /rollup/2.71.1:
+    resolution: {integrity: sha512-lMZk3XfUBGjrrZQpvPSoXcZSfKcJ2Bgn+Z0L1MoW2V8Wh7BVM+LOBJTPo16yul2MwL59cXedzW1ruq3rCjSRgw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /rome/0.4.2-next:
-    resolution: {integrity: sha512-Fr6TdmIKNfIPr7/a/QJR1ZXLz6G6ammn7j9ButylpZgt9NnT7XlQ5i0FjZOIy/lKOzOJe4cjhiltSSL5DMb5+w==}
+  /rome/0.5.0-next:
+    resolution: {integrity: sha512-Y5LmDdSeu35DrqJRQnNHSmZcL6yOyHUhJLKevZN5xXW4GnPwHMLF8rUahnhgAugD5wmyGYAgakwKWA64n6yxkg==}
     engines: {node: '>=14.18.0'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      '@rometools/cli-darwin-arm64': 0.4.2-next
-      '@rometools/cli-darwin-x64': 0.4.2-next
-      '@rometools/cli-linux-arm64': 0.4.2-next
-      '@rometools/cli-linux-x64': 0.4.2-next
-      '@rometools/cli-win32-arm64': 0.4.2-next
-      '@rometools/cli-win32-x64': 0.4.2-next
+      '@rometools/cli-darwin-arm64': 0.5.0-next
+      '@rometools/cli-darwin-x64': 0.5.0-next
+      '@rometools/cli-linux-arm64': 0.5.0-next
+      '@rometools/cli-linux-x64': 0.5.0-next
+      '@rometools/cli-win32-arm64': 0.5.0-next
+      '@rometools/cli-win32-x64': 0.5.0-next
     dev: true
 
   /safe-buffer/5.1.2:
@@ -898,9 +898,9 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.14.38
-      postcss: 8.4.12
+      postcss: 8.4.13
       resolve: 1.22.0
-      rollup: 2.70.2
+      rollup: 2.71.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true

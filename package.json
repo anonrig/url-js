@@ -18,10 +18,10 @@
   "author": "Yagiz Nizipli <yagiz@nizipli.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^17.0.29",
+    "@types/node": "^17.0.30",
     "c8": "^7.11.2",
     "cronometro": "^1.0.5",
-    "rome": "^0.4.2-next",
+    "rome": "^0.5.0-next",
     "vitest": "^0.10.0",
     "whatwg-url": "^11.0.0"
   },
