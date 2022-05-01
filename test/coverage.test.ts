@@ -5,18 +5,18 @@ import StateMachine from "../lib";
 import { serialize_ipv4, serialize_ipv6 } from "./serializers";
 
 type Suite = {
-  input: string,
-  base?: string,
-  protocol?: string,
-  failure?: boolean,
-  username?: string,
-  password?: string,
-  host?: string,
-  hostname?: string,
-  fragment?: string,
-  pathname?: string,
-  query?: string,
-  port?: number,
+  input: string;
+  base?: string;
+  protocol?: string;
+  failure?: boolean;
+  username?: string;
+  password?: string;
+  host?: string;
+  hostname?: string;
+  fragment?: string;
+  pathname?: string;
+  query?: string;
+  port?: number;
 };
 
 for (let suite of url_test_data) {

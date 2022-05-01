@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "type": "commonjs",
   "scripts": {
-    "format": "rome format . --indent-style space",
+    "format": "rome format . --indent-style space --write",
     "test": "vitest",
     "watch": "vitest --watch",
     "coverage": "vitest run --coverage",
