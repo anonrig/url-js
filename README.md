@@ -14,9 +14,19 @@ npm i --save url-state-machine
 
 ```javascript
 const URLStateMachine = require('url-state-machine')
-const state = new URLStateMachine('https://www.yagiz.co/implementing-node-js-url-parser-in-webassembly-with-rust/')
+const state = new URL('https://www.yagiz.co/implementing-node-js-url-parser-in-webassembly-with-rust')
 
 console.log(state.url)
+// {
+//   scheme: 'https',
+//   username: '',
+//   password: '',
+//   host: 'www.yagiz.co',
+//   port: null,
+//   path: [ 'implementing-node-js-url-parser-in-webassembly-with-rust' ],
+//   query: null,
+//   fragment: null
+// }
 ```
 
 ### Benchmarks
@@ -81,7 +91,15 @@ console.log(state.url)
 
 ### Testing
 
+#### Running
+
 All tests are referenced and borrowed from [web-platform-tests](https://github.com/web-platform-tests/wpt/blob/master/url/resources/urltestdata.json).
+
+```bash
+npm test
+```
+
+#### Code Coverage
 
 ```
 Test Files  1 failed (1)
@@ -89,9 +107,18 @@ Test Files  1 failed (1)
       Time  48ms
 ```
 
-#### Conformance to specification
+File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+--------------|---------|----------|---------|---------|--------------------------------------------
+All files     |   95.88 |    95.19 |      98 |   95.88 |
+ constants.js |     100 |      100 |     100 |     100 |
+ encoding.js  |     100 |      100 |     100 |     100 |
+ index.js     |      94 |    93.05 |     100 |      94 | ...5-776,801-802,922-923,927-928,1071-1072
+ parser.js    |   99.53 |    99.05 |     100 |   99.53 | 283-284
+ platform.js  |     100 |      100 |     100 |     100 |
+ string.js    |     100 |      100 |     100 |     100 |
+ utf8.js      |   84.33 |    88.23 |      50 |   84.33 | 39-44,63-64,77-81
 
-We're currently testing only the following attributes for URL
+#### Conformance to specification
 
 - pathname
   - 13 failed | 720 passed (733)
