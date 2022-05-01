@@ -41,7 +41,7 @@ for (let suite of url_test_data) {
         }
 
         if (t.host) {
-          let port = state.url.port ? `:${state.url.port}` : "";
+          let port = state.url.port !== null ? `:${state.url.port}` : "";
           let host = Array.isArray(state.url.host)
             ? `[${serialize_ipv6(state.url.host)}]`
             : typeof state.url.host === "number"
