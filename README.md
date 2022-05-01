@@ -103,16 +103,16 @@ npm test
 
 ```
 Test Files  1 failed (1)
-     Tests  16 failed | 717 passed (733)
-      Time  48ms
+     Tests  14 failed | 719 passed (733)
+      Time  65ms
 ```
 
 File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 --------------|---------|----------|---------|---------|--------------------------------------------
-All files     |   95.88 |    95.19 |      98 |   95.88 |
+All files     |   95.88 |    95.18 |      98 |   95.88 |
  constants.js |     100 |      100 |     100 |     100 |
  encoding.js  |     100 |      100 |     100 |     100 |
- index.js     |      94 |    93.05 |     100 |      94 | ...5-776,801-802,922-923,927-928,1071-1072
+ index.js     |   93.99 |    93.02 |     100 |   93.99 | ...4-775,800-801,921-922,926-927,1070-1071
  parser.js    |   99.53 |    99.05 |     100 |   99.53 | 283-284
  platform.js  |     100 |      100 |     100 |     100 |
  string.js    |     100 |      100 |     100 |     100 |
@@ -121,9 +121,9 @@ All files     |   95.88 |    95.19 |      98 |   95.88 |
 #### Conformance to specification
 
 - pathname
-  - 13 failed | 720 passed (733)
+  - 11 failed | 722 passed (733)
 - host
-  - 5 failed | 728 passed (733)
+  - 3 failed | 315 passed (318)
 - password
   - 733 passed (733)
 - protocol
