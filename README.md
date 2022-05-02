@@ -1,8 +1,6 @@
-## URL Parser
+## URL State Machine
 
-This repository contains a work in progress state machine 100% compliant to the URL parser specification. The goal is to create a performant URL parser.
-
-For more information about the URL parsing state machine visit [here](https://url.spec.whatwg.org/#url-parsing).
+Super fast specification compliant URL state machine for Node.js. For more information about the URL parsing state machine visit [here](https://url.spec.whatwg.org/#url-parsing).
 
 ### Installation
 
