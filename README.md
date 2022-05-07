@@ -12,7 +12,7 @@ npm i --save url-state-machine
 
 ```javascript
 const URLStateMachine = require('url-state-machine')
-const state = new URL('https://www.yagiz.co/implementing-node-js-url-parser-in-webassembly-with-rust')
+const state = new URLStateMachine('https://www.yagiz.co/implementing-node-js-url-parser-in-webassembly-with-rust')
 
 console.log(state.url)
 // {
