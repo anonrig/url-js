@@ -37,11 +37,15 @@ for (let suite of url_test_data) {
           let path = typeof state.url.path === "string" ? state.url.path : state.url.path.map(
             (p) => `/${p}`,
           ).join("");
-          assert.equal(path, t.pathname, JSON.stringify({ state, t }, null, 2));
+          assert.deepEqual(
+            path,
+            t.pathname,
+            JSON.stringify({ state, t }, null, 2),
+          );
         }
 
         if (t.search) {
-          assert.equal("?" + state.url.query, t.search);
+          assert.deepEqual("?" + state.url.query, t.search);
         }
 
         if (t.host) {
@@ -51,7 +55,7 @@ for (let suite of url_test_data) {
             : typeof state.url.host === "number"
               ? serialize_ipv4(state.url.host)
               : state.url.host;
-          assert.equal(
+          assert.deepEqual(
             host + port,
             t.host,
             JSON.stringify({ state, t }, null, 2),
@@ -59,7 +63,7 @@ for (let suite of url_test_data) {
         }
 
         if (t.password) {
-          assert.equal(
+          assert.deepEqual(
             state.url.password,
             t.password,
             JSON.stringify({ state, t }, null, 2),
@@ -67,11 +71,11 @@ for (let suite of url_test_data) {
         }
 
         if (typeof t.failure !== "undefined") {
-          assert.equal(state.failure, t.failure);
+          assert.deepEqual(state.failure, t.failure);
         }
 
         if (t.username) {
-          assert.equal(
+          assert.deepEqual(
             state.url.username,
             t.username,
             JSON.stringify(state, null, 2),
@@ -79,7 +83,7 @@ for (let suite of url_test_data) {
         }
 
         if (t.protocol) {
-          assert.equal(
+          assert.deepEqual(
             state.url.scheme,
             t.protocol.replaceAll(":", ""),
             JSON.stringify(state, null, 2),
@@ -87,11 +91,15 @@ for (let suite of url_test_data) {
         }
 
         if (t.port) {
-          assert.equal(state.url.port, t.port, JSON.stringify(state, null, 2));
+          assert.deepEqual(
+            state.url.port.toString(),
+            t.port,
+            JSON.stringify(state, null, 2),
+          );
         }
 
         if (t.fragment) {
-          assert.equal(
+          assert.deepEqual(
             state.url.fragment,
             t.fragment,
             JSON.stringify(state, null, 2),
