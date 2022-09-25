@@ -27,85 +27,83 @@ for (let suite of url_test_data) {
   const t = suite as Suite;
 
   if (suite.input) {
-    test(
-      `"${t.input}" with base: "${t.base}"`,
-      () => {
-        const base = t.base ? new StateMachine(t.base).url : null;
-        const state = new StateMachine(t.input, base);
+    test(`"${t.input}" with base: "${t.base}"`, () => {
+      const base = t.base ? new StateMachine(t.base).url : null;
+      const state = new StateMachine(t.input, base);
 
-        if (t.pathname) {
-          let path = typeof state.url.path === "string" ? state.url.path : state.url.path.map(
-            (p) => `/${p}`,
-          ).join("");
-          assert.deepEqual(
-            path,
-            t.pathname,
-            JSON.stringify({ state, t }, null, 2),
-          );
-        }
+      if (t.pathname) {
+        let path =
+          typeof state.url.path === "string"
+            ? state.url.path
+            : state.url.path.map((p) => `/${p}`).join("");
+        assert.deepEqual(
+          path,
+          t.pathname,
+          JSON.stringify({ state, t }, null, 2),
+        );
+      }
 
-        if (t.search) {
-          assert.deepEqual("?" + state.url.query, t.search);
-        }
+      if (t.search) {
+        assert.deepEqual("?" + state.url.query, t.search);
+      }
 
-        if (t.host) {
-          let port = state.url.port !== null ? `:${state.url.port}` : "";
-          let host = Array.isArray(state.url.host)
-            ? `[${serialize_ipv6(state.url.host)}]`
-            : typeof state.url.host === "number"
-              ? serialize_ipv4(state.url.host)
-              : state.url.host;
-          assert.deepEqual(
-            host + port,
-            t.host,
-            JSON.stringify({ state, t }, null, 2),
-          );
-        }
+      if (t.host) {
+        let port = state.url.port !== null ? `:${state.url.port}` : "";
+        let host = Array.isArray(state.url.host)
+          ? `[${serialize_ipv6(state.url.host)}]`
+          : typeof state.url.host === "number"
+          ? serialize_ipv4(state.url.host)
+          : state.url.host;
+        assert.deepEqual(
+          host + port,
+          t.host,
+          JSON.stringify({ state, t }, null, 2),
+        );
+      }
 
-        if (t.password) {
-          assert.deepEqual(
-            state.url.password,
-            t.password,
-            JSON.stringify({ state, t }, null, 2),
-          );
-        }
+      if (t.password) {
+        assert.deepEqual(
+          state.url.password,
+          t.password,
+          JSON.stringify({ state, t }, null, 2),
+        );
+      }
 
-        if (typeof t.failure !== "undefined") {
-          assert.deepEqual(state.failure, t.failure);
-        }
+      if (typeof t.failure !== "undefined") {
+        assert.deepEqual(state.failure, t.failure);
+      }
 
-        if (t.username) {
-          assert.deepEqual(
-            state.url.username,
-            t.username,
-            JSON.stringify(state, null, 2),
-          );
-        }
+      if (t.username) {
+        assert.deepEqual(
+          state.url.username,
+          t.username,
+          JSON.stringify(state, null, 2),
+        );
+      }
 
-        if (t.protocol) {
-          assert.deepEqual(
-            state.url.scheme,
-            t.protocol.replaceAll(":", ""),
-            JSON.stringify(state, null, 2),
-          );
-        }
+      if (t.protocol) {
+        assert.deepEqual(
+          state.url.scheme,
+          t.protocol.replaceAll(":", ""),
+          JSON.stringify(state, null, 2),
+        );
+      }
 
-        if (t.port) {
-          assert.deepEqual(
-            state.url.port.toString(),
-            t.port,
-            JSON.stringify(state, null, 2),
-          );
-        }
+      if (t.port) {
+        assert.deepEqual(
+          state.url.port.toString(),
+          t.port,
+          JSON.stringify(state, null, 2),
+        );
+      }
 
-        if (t.fragment) {
-          assert.deepEqual(
-            state.url.fragment,
-            t.fragment,
-            JSON.stringify(state, null, 2),
-          );
-        }
-      },
-    );
+      if (t.fragment) {
+        assert.deepEqual(
+          state.url.fragment,
+          t.fragment,
+          JSON.stringify(state, null, 2),
+        );
+      }
+    });
   }
 }
